@@ -1,0 +1,180 @@
+/* Estilos predeterminados */
+.login-background {
+  opacity: 0.85;
+  background: var(--Schemes-On-Primary-Container, #29638a);
+  background-image: url(../Assets/background-signup.png);
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #001F3F;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #001F3F;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+.login-background-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Card-cont {
+  width: 100%;
+  max-width: 400px; /* Ajusta este valor según sea necesario */
+  margin-right: 5%; /* Ajusta este valor para el espacio responsivo */
+}
+
+.no-border-radius-right,
+.no-border-radius-left {
+  border-color: #ced4da;
+  border-style: solid;
+}
+
+.no-border-radius-right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.no-border-radius-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.submit-btn-login {
+  background-color: #0f172a !important;
+}
+
+/* Estilos específicos para la versión web */
+@media only screen and (min-width: 769px) {
+  .d-flex.flex-column.justify-content-between.h-100 {
+    height: calc(100% - 4rem) !important; /* Ajusta según sea necesario */
+  }
+
+  .submit-btn-login {
+    margin-top: auto !important;
+  }
+}
+
+/* Estilos específicos para móviles */
+@media only screen and (max-width: 768px) {
+  .login-background {
+   .login-background-container{
+    margin-left: auto !important;
+    margin-right: auto !important;
+   }
+  }
+  .login-background-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinear elementos en la parte inferior */
+    align-items: center;
+    padding: 0;
+  }
+
+  .Card-cont {
+    max-width: 100% !important; /* Ancho completo */
+    margin: 0 !important; /* Sin margen en móviles */
+    padding: 0;
+  }
+
+  .card {
+    border-radius: 10px 10px 0 0 !important; /* Sin borde redondeado */
+    width: 100%; /* Ancho completo */
+  }
+
+  .submit-btn-login {
+    width: 100%;
+    text-align: center;
+  }
+
+  .d-flex.mb-4 {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; /* Asegura que los elementos estén en una fila */
+  }
+
+  .img-black.me-2.w-2vw {
+    /* Ajusta para móviles */
+    position: relative;
+    width: 7vw; /* Equivalente responsivo de 35.3px */
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+  }
+
+  h1.text-left.mb-4,
+  div.mb-4 {
+    padding-bottom: 1.5rem;
+  }
+
+  h3.text-left.mb-0,
+  h1.text-left.mb-4 {
+    text-align: left;
+    position: relative;
+    letter-spacing: -0.02em;
+    font-family: Geologica;
+    color: #001e30;
+    text-align: left;
+  }
+
+  .mt-3.d-flex.justify-content-between.mb-4 {
+    flex-direction: row; /* Asegura que los elementos estén en una fila */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+  }
+
+  .mt-3.d-flex.justify-content-between.mb-4 .form-check,
+  .mt-3.d-flex.justify-content-between.mb-4 a {
+    margin: 0; /* Sin margen extra */
+  }
+
+  .card {
+    min-width: fit-content !important;
+    min-height: fit-content !important;
+  }
+
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #password > div.mt-3.d-flex.justify-content-between.mb-4 {
+    margin-bottom: 5vh !important;
+  }
+
+  #root > div > div > div > div > div.card-body > h1 {
+    margin-bottom: 5vh !important;
+  }
+
+  #root > div > div > div > div > div.card-body > div {
+    margin-bottom: 5vh !important;
+  }
+}

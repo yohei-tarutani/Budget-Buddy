@@ -1,0 +1,62 @@
+.welcome-background {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure pseudo-element doesn't affect layout */
+}
+
+.welcome-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--Schemes-On-Primary-Container, #29638a);
+  background-image: url(../Assets/welcome_onboarding.jpeg);
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.welcome-background-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 45%;
+  padding-right: 2rem;
+  position: relative;
+  z-index: 1; /* Ensure content stays above the pseudo-element */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0rem;
+  min-height: 80vh;
+  min-width: 500px;
+  max-width: 600px;
+  opacity: 1;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .welcome-background-container {
+    align-items: flex-end !important; /* Align items to the bottom on mobile devices */
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .card {
+    min-height: 60vh; /* Adjust card height if needed */
+    width: 100%; /* Make card full width on mobile */
+  }
+}

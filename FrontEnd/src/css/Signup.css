@@ -1,0 +1,94 @@
+.signup-background{
+  opacity: 0.85;
+  background: var(--Schemes-On-Primary-Container, #29638a);
+  background-image: url(../Assets/background-signup.png);
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.password-requirements{
+  color: #64748b;
+  font-size: 12px;
+}
+
+.password-requirements ul {
+  padding-left: 20px;
+  list-style-type: disc; 
+  color: #64748b; 
+  font-size: 12px;
+}
+
+  
+  .btn-primary {
+    background-color: #001F3F;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #001F3F;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .signup-background-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .Card-cont {
+    width: 100%;
+    max-width: 400px; /* Adjust this value as needed */
+    margin-right: 5%; /* Adjust this value for responsive space */
+  }
+
+  div.card-body{
+    margin: 1.5rem;
+  }
+
+.img-black {
+  filter: invert(100%);
+  width: 2vw;
+  height: auto;
+  margin-right: 0.5rem;
+
+}
+
+.submit-btn-signup{
+  background-color: #0f172a;
+}
+
+.no-border-radius-right,
+.no-border-radius-left {
+    border-color: #ced4da;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.no-border-radius-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.no-border-radius-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+@media only screen and (max-width: 768px) {
+  .signup-background-container {
+    margin-left: auto !important;
+margin-right: auto !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+  }
+}
