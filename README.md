@@ -5,8 +5,8 @@ Budget Buddy is a web app which helps individuals manage their money to keep bal
 ![Image](https://github.com/user-attachments/assets/7e58fad1-29df-4c2f-9e49-44796851efed)
 
 ### Team Project
-This is my latest team project at college which has developed during 13 weeks.
-I had the privilege of collaborating with a talented team of designers and developers as a front-end developer.
+This is one of my former team projects at college which has developed during 13 weeks.
+I had the privilege of collaborating with a talented team of designers and developers.
 
 ## Main features
 #### 💳 Track Expenses:
