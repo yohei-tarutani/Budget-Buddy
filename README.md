@@ -1,5 +1,5 @@
-# Welcome to Budget-Buddy👋
-Budget-Buddy is a web app which helps individuals manage their money to keep balance of payment and stay on track to achieve their financial goals.
+# Welcome to Budget Buddy👋
+Budget Buddy is a web app which helps individuals manage their money to keep balance of payment and stay on track to achieve their financial goals.
 <br>
 
 ![Image](https://github.com/user-attachments/assets/7e58fad1-29df-4c2f-9e49-44796851efed)
